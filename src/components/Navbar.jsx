@@ -11,8 +11,21 @@ const Navbar = () => {
     setNav(false);
   };
   return (
-    <div className="flex text-xl justify-between items-center text-gray-200 px-6 max-w-[1300px] mx-auto h-24">
-      <a href="">Aung Sitt Khaing</a>
+    <div className="flex text-xl justify-between items-center text-gray-200 px-6 max-w-[1300px] mx-auto h-24 sticky top-0 z-50">
+      <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
+        <li className="relative group">
+          <Link
+            to="home"
+            duration={500}
+            smooth={true}
+            offset={50}
+            className="cursor-pointer"
+          >
+            Aung Sitt Khaing
+          </Link>
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ease-in-out"></span>
+        </li>
+      </ul>
       <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
         <li className="relative group">
           <Link to="about" duration={500} smooth={true} offset={50}>
@@ -21,8 +34,8 @@ const Navbar = () => {
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ease-in-out"></span>
         </li>
         <li className="relative group">
-          <Link to="portfolio" duration={500} smooth={true} offset={50}>
-            Portfolio
+          <Link to="project" duration={500} smooth={true} offset={50}>
+            Projects
           </Link>
           <span className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ease-in-out"></span>
         </li>
@@ -64,7 +77,7 @@ const Navbar = () => {
               smooth={true}
               offset={50}
             >
-              Portfolio
+              Projects
             </Link>
           </li>
           <li>
