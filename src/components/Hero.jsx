@@ -24,7 +24,7 @@ const Hero = () => {
         <h2 className="text-gray-300">with 2+ years of experience</h2>
         <div className="flex flex-row gap-4 mb-4 md:mb-0">
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1CB1ceqRQKFi_3mwbHpYlcedof6Vs8e-9/view?usp=drive_link"
             className="text-center font-bold cursor-pointer text-gray-200 w-1/2 mt-6 p-2 z-10 bg-blue-500 rounded-xl transform transition-transform hover:scale-105 hover:shadow-lg"
           >
             Download CV
